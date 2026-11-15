@@ -101,8 +101,8 @@
               <!-- PUZZLE 1 - Conway's Game of Life answer: 44. but its actually 42 according to science -->
               <div id="p1" class="panel">
                 <h2>Puzzle 1 · Conway's Game of Life</h2>
-                <p>To complete this puzzle you have to go to <b><a class="links" href="https://playgameoflife.com" target="_blank" rel="noopener">playgameoflife.com</a></b>,
-                  and copy this heart, it is generation 0. run exactly <strong id="genText">31</strong> generations.<b> Enter the 2 digit number you see.</b></p>
+                <p>To complete the first puzzle you have to go to <b><a class="links" href="https://playgameoflife.com" target="_blank" rel="noopener">playgameoflife.com</a></b>,
+                  and copy this heart, <b>the heart is generation 0.</b> run exactly <strong id="genText">31</strong> generations.<b> Enter the 2 digit number you see.</b></p>
 
                 <div id="board" class="board"></div>   <!-- JavaScript makes the board thing -->
 
@@ -115,7 +115,7 @@
               <!-- PUZZLE 2 - Meme puzzle just google the hint answer: 4 -->
               <div id="p2" class="panel hidden">
                 <h2>Puzzle 2 · Player 2: The Passcode</h2>
-                <p>Enter the passcode to continue to the Library of Babel puzzle.</p>
+                <p><b>Enter the passcode to continue to the Library of Babel puzzle. (You can google the hint)</b></p>
                 <p><b>Hint:</b> It's a single digit number used in Indian digital certificate authority of <b>eMudhra.</b></p>
                 <input id="num2" type="number" placeholder="Passcode">
                 <button id="mapBtn">Continue</button>
@@ -126,19 +126,18 @@
             <!-- PUZZLE 3 - THE LIBRARY: shown after Puzzle 2 is solved. -->
             <div id="p3" class="panel lock hidden">
               <h2>Puzzle 3 · The Library of Babel</h2>
-              <p>Go to <a href="https://libraryofbabel.info/browse.cgi" target="_blank" rel="noopener">libraryofbabel.info</a>,
-                open Browse, and enter the address below. Most of the page is gibberish. Find the part that reads like English;
-                it tells you the secret word.</p>
+              <p><b>Go to <a href="https://libraryofbabel.info/browse.cgi" target="_blank" rel="noopener">libraryofbabel.info</a></b>,
+                open <b>Browse</b>, and enter the address below. Most of the page is just words. Find the part that reads; <b><i>the secret word.</i></b></p>
               <label for="hexBox"></label>
               <div id="copyStatus" class="msg" role="status" aria-live="polite"></div>
               <ul>
-                <b><li>Hexagon: <span id="aHex"></span></li>
-                <li>Wall: <span id="aWall"></span></li>
-                <li>Shelf: <span id="aShelf"></span></li>
-                <li>Volume: <span id="aVolume"></span></li>
-                <li>Page: <span id="aPage"></span></li></b>
+                <b><li>Hexagon: </b><span id="aHex"></span></li>
+                <b><li>Wall: </b><span id="aWall"></span></li>
+                <b><li>Shelf: </b><span id="aShelf"></span></li>
+                <b><li>Volume: </b><span id="aVolume"></span></li>
+                <b><li>Page: </b><span id="aPage"></span></li>
               </ul>
-              <p>What secret word did the Library page tell you? Type it to reveal the message.</p>
+              <p><i>What secret word did the Library page tell you? Type it to reveal the message.<i></p>
               <input id="word" type="text" placeholder="secret word">
               <button id="unlockBtn">Unlock</button>
               <div id="msg2" class="msg"></div>
